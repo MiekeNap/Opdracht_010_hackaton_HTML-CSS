@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mieke's Breakfast Club</title>
+</head>
+
+<body>
+    <header>
+        <h1>Reserverings Formulier</h1>
+    </header>
+    <main>
+        <p>U kunt hieronder een reservering maken om gegarandeert een plekje te hebben in Mieke's Breakfast Club. <br>
+            Als u wilt reserveren voor meer dan 8 personen, neem dan even telefonisch <a href="#contact">contact</a> op
+            om de mogelijkheden te bespreken.</p>
+        <h4>Elke dag open, tussen 07:00 - 17:00 uur.</h4>
+        <form name="reservation" method="POST" netlify="true">
+            <p>
+                <label for="naam">Naam:</label><br>
+                <input type="text" name="naam">
+            </p>
+            <p>
+                <label for="tel">Mobiel nummer:</label><br>
+                <input type="tel" name="tel" pattern="[0-9]{2}-[0-9]{8}" value="06-xxxxxxxx">
+            </p>
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label for="number">Aantal personen:</label><br>
+                <input type="number" name="number" min="1" max="8">
+            </p>
+            <p>
+                <label for="date">Datum:</label><br>
+                <input type="date" name="date">
+            </p>
+            <p>
+                <label for="time">Tijd:</label><br>
+                <input type="time" name="time" min="07:00" max="16:00">
+            </p>
+            <p>
+                <label for="message">Laat uw opmerkingen of vragen hier achter:</label><br>
+                <textarea name="message" rows="5" cols="20">
+                    </textarea>
+            </p>
+            <input type="submit">
+        </form>
+    </main>
+    <aside>
+        Bekijk <a target="_blank" href="https://www.google.nl/maps">hier</a> uw route naar Mieke's Breakfast Club
+    </aside>
+    <nav>
+        <ul class="links">
+            <li class="navli"> <a href="index.html">Home</a></li>
+            <li class="navli"> <a href="menu.html">Menu</a></li>
+            <li class="navli active"> <a href="formulier.html">Reserveren</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <address> <a name="contact"></a>
+            Mieke's Breakfast Club<br>
+            Verzonnenstraat 12<br>
+            1234AB Nepplaats<br>
+            Nederland<br>
+            0123-345 67 89<br>
+            Mieke@breakfast-club.nl<br>
+        </address>
+        <p class="copyright">copyright© 2021, Mieke's Breakfast Club</p>
+    </footer>
+</body>
+
+</html>

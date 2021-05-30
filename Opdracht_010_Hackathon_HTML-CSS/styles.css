@@ -1,0 +1,138 @@
+header {
+    margin-top: 50px;
+    background-color: turquoise;
+    height: 200px;
+    text-align: center;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslategrey;
+    background-color: rgb(234, 234, 250);
+}
+
+.introduction {
+    float:left;
+    max-width: 50%;
+}
+
+aside {
+    float: left;
+    margin: 20px;
+    border: 20px outset darkturquoise;
+    padding: 40px;
+    text-align: left;
+}
+
+iframe {
+    float: left;
+    margin: 20px;
+    border: 20px outset darkturquoise;
+    padding: 40px;
+}
+
+.menu {
+    float:left;
+}
+
+ul {
+    margin-top: 5px;
+    list-style: square;
+    color:darkslategrey;
+}    
+
+/*photogallery in menu*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    background-color: blanchedalmond;
+  }
+
+.column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+figcaption {
+    text-align: center;
+}
+
+/*navigation links between pages*/
+.links {
+    clear: both;
+    list-style-type: none;
+    margin: 1%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(71, 70, 70);
+}
+.navli {
+    float: left;
+}
+.navli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navli a:hover {
+    background-color: #111;
+}
+.active{
+    background-color: lightcoral;
+}
+
+address {
+    font-weight: bold;
+    margin-left: 1%;
+    margin-top: 20px;
+}
+
+.copyright {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1%;
+    border: 2px solid darkturquoise;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (min-width: 700px){
+    body {
+        background-color: rgb(151, 216, 216);
+        color: purple;
+        font-size:14px;
+        line-height: 1.5rem;
+    }
+    header {
+        background-color: rgb(229, 191, 245);   
+    }  
+    .column {
+        flex: 40%;
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 1025px){
+    body {
+        background-color: lightcyan;
+        color: rgb(180, 72, 175);
+        font-size:12px;
+        line-height: 1.5rem;
+    }
+    header {
+        background-color: rgb(229, 191, 245);   
+    }    
+    .column {
+        flex: 20%;
+        max-width: 20%;
+    }    
+}
